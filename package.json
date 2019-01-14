@@ -6,6 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "gulp build",
+    "server": "node ./server.js",
     "server:start": "forever start ./server.js",
     "server:stop": "forever stop ./server.js"
   },

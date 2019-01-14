@@ -6,9 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "gulp build",
-    "server": "node ./server.js",
-    "server:start": "forever start ./server.js",
-    "server:stop": "forever stop ./server.js"
+    "server": "pm2 delete ./server.js; pm2 start ./server.js "
   },
   "repository": {
     "type": "git",
@@ -24,7 +22,6 @@
     "@babel/core": "^7.2.2",
     "del": "^3.0.0",
     "express": "^4.16.4",
-    "forever": "^0.15.3",
     "gulp": "^4.0.0",
     "gulp-babel": "^8.0.0",
     "gulp-clean-css": "^4.0.0",
@@ -32,7 +29,8 @@
     "gulp-file-include": "^2.0.1",
     "gulp-rename": "^1.4.0",
     "gulp-sass": "^4.0.2",
-    "gulp-uglify": "^3.0.1"
+    "gulp-uglify": "^3.0.1",
+    "pm2": "^3.2.8"
   },
   "dependencies": {
     "bulma": "^0.7.2"

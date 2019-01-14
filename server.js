@@ -2,7 +2,7 @@ const Express = require('express');
 const path = require('path');
 
 const app = new Express();
-const port = 8080;
+const port = 3000;
 
 app.disable('x-powered-by');
 app.use('/', Express.static(path.join(process.cwd(), 'dist'), { maxAge: '1d' }));

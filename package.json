@@ -6,6 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "gulp build",
+    "start": "gulp start ",
     "server": "pm2 delete ./server.js; pm2 start ./server.js "
   },
   "repository": {
@@ -20,11 +21,14 @@
   "homepage": "https://github.com/leolin0704/siteo-static#readme",
   "devDependencies": {
     "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.2.3",
+    "browser-sync": "^2.26.3",
     "del": "^3.0.0",
     "express": "^4.16.4",
     "gulp": "^4.0.0",
     "gulp-babel": "^8.0.0",
     "gulp-clean-css": "^4.0.0",
+    "gulp-cli": "^2.0.1",
     "gulp-concat": "^2.6.1",
     "gulp-file-include": "^2.0.1",
     "gulp-rename": "^1.4.0",
@@ -33,6 +37,8 @@
     "pm2": "^3.2.8"
   },
   "dependencies": {
-    "bulma": "^0.7.2"
+    "bulma": "^0.7.2",
+    "jquery": "^3.3.1",
+    "swiper": "^4.4.6"
   }
 }

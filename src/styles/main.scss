@@ -1,0 +1,35 @@
+body,html{
+  margin: 0;
+  padding:0;
+}
+
+.head{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .logo{
+      font-weight: bold;
+      font-size: 24px;
+      font-family: monospace;
+      line-height: 52px;
+      span{
+        font-size: 18px;
+      }
+
+      &:hover{
+        color:inherit;
+      }
+    }
+}
+
+.swiper-container{
+  height:550px;
+
+  .swiper-slide{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+}
+

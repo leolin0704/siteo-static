@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "gulp build",
+    "server:start": "forever start ./server.js",
+    "server:stop": "forever stop ./server.js"
   },
   "repository": {
     "type": "git",
@@ -20,6 +23,7 @@
     "@babel/core": "^7.2.2",
     "del": "^3.0.0",
     "express": "^4.16.4",
+    "forever": "^0.15.3",
     "gulp": "^4.0.0",
     "gulp-babel": "^8.0.0",
     "gulp-clean-css": "^4.0.0",

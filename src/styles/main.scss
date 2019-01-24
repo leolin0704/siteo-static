@@ -3,10 +3,16 @@ body,html{
   padding:0;
 }
 
+.head-placeholder{
+  height:54px;
+}
+
 .head{
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    box-shadow: 0px 2px 5px #999;
 
     .logo{
       font-weight: bold;
@@ -32,4 +38,3 @@ body,html{
     background-position: center;
   }
 }
-

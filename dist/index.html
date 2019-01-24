@@ -15,7 +15,8 @@
   <link rel="stylesheet" href="/styles/index.min.css" />
 </head>
 <body>
-  <section class="hero is-small is-light head">
+  <div class="head-placeholder"></div>
+<section class="hero is-small is-light head">
     <div class="hero-head">
       <nav class="navbar" >
         <div class="container">
@@ -24,19 +25,19 @@
           </a>
           <div class="navbar-menu">
             <div class="navbar-end">
-              <a class="navbar-item is-active">
+              <a class="navbar-item is-active" href="index.html">
                 Home
               </a>
-              <a class="navbar-item">
+              <a class="navbar-item" href="customers.html">
                 Customers
               </a>
-              <a class="navbar-item">
+              <a class="navbar-item" href="destinations.html">
                 Destinations
               </a>
-              <a class="navbar-item">
+              <a class="navbar-item" href="about.html">
                 About Us
               </a>
-              <a class="navbar-item">
+              <a class="navbar-item" href="contact.html">
                 Contact Us
               </a>
               <span class="navbar-item">
@@ -50,72 +51,94 @@
       </nav>
     </div>
   </section>
-<section>
-<div class="swiper-container">
-  <div class="swiper-wrapper">
-    <div class="swiper-slide" style="background-image: url(/assets/christmas.jpg);">
+  <section class="hero is-medium main-ad">
+    <div class="hero-body">
       <div class="container">
-        <div style="transform: translateY(150px); width:600px;">
-          <p class="title has-text-white">Santa Claus Village in Rovaniemi</p>
-          <p class="subtitle has-text-white">You can meet Santa Claus and cross the magical Arctic Circle every day at the Santa Claus Village in Rovaniemi in Lapland, Finland.</p>
-        </div>
+          <div class="tile is-ancestor">
+              <div class="tile is-8 is-vertical is-parent">
+                <div class="tile is-child has-text-centered">
+                  <br />
+                  <br />
+                  <br />
+                  <p class="title has-text-white-bis">Personal Plan Just For You.</p>
+                  <p class="title has-text-white-bis">All you need is to see the world! Just contact us!</p>
+                </div>
+              </div>
+              <div class="tile is-parent">
+                <div class="tile is-child box">
+                  <p class="title has-text-primary">Customize Now</p>
+                  <div class="field">
+                      <div class="control">
+                        <input class="input is-primary" type="text" placeholder="Your name">
+                      </div>
+                    </div>
+                    <div class="field">
+                      <div class="control">
+                        <input class="input is-primary" type="text" placeholder="Your phone number">
+                      </div>
+                    </div>
+                    <div class="field">
+                      <div class="control">
+                        <input class="input is-primary" type="text" placeholder="Your destination">
+                      </div>
+                    </div>
+                    <div class="field is-grouped">
+                      <div class="control">
+                        <button class="button is-link">Submit</button>
+                      </div>
+                      <div class="control">
+                        <button class="button">Reset</button>
+                      </div>
+                    </div>
+                </div>
+              </div>
+            </div>
       </div>
     </div>
-    <div class="swiper-slide" style="background-image: url(/assets/beach.jpg);">
-      <div class="container">
-          <div style="transform: translate(30px, 380px); width: 800px;">
-            <p class="title has-text-white">Maldives</p>
-            <p class="subtitle has-text-white">where sands are white as the smiles of the locals, where fish swim happily in the warm waters of the Indian Ocean, where the weather is a dream, and the deep rays of the sun wait to engulf you in their arms.</p>
-          </div>
-        </div>
-    </div>
-    <div class="swiper-slide" style="background-image: url(/assets/aurora.jpg);">
-      <div class="container">
-          <div style="transform: translate(220px, 130px); width:600px;">
-            <p class="title has-text-white">Aurora Borealis Holidays to Finland</p>
-            <p class="subtitle has-text-white">Along with our expert Aurora hunters dogged determination to seek out the lights for you during your stay, Finland is a perfect Northern Lights destination. We have selected some of the best locations for our Aurora Zone holidays.</p>
-          </div>
-        </div>
-    </div>
-  </div>
-  <!-- Add Arrows -->
-  <div class="swiper-button-next"></div>
-  <div class="swiper-button-prev"></div>
-</div>
-</section>
-  <section class="hero is-light">
+  </section>
+  <section class="hero is-medium is-bold">
     <div class="hero-body">
       <div class="container">
         <h1 class="title">
-          Primary title
+          Professional
         </h1>
         <h2 class="subtitle">
-          Primary subtitle
+          Professional Consultants, 24h Online Customer Services
         </h2>
       </div>
     </div>
   </section>
-  
-  <section class="section">
-    <div class="container">
-      <h1 class="title">Section</h1>
-      <h2 class="subtitle">
-        A simple container to divide your page into <strong>sections</strong>, like the one you're currently reading
-      </h2>
+  <section class="hero is-medium is-light is-bold" style="background:url(assets/mountain.png) left center no-repeat;background-size: cover;">
+    <div class="hero-body">
+      <div class="container has-text-right">
+        <h1 class="title">
+          Customize & Personal & Independent
+        </h1>
+        <h2 class="subtitle">
+          Your trip is all you want
+        </h2>
+      </div>
+    </div>
+  </section>
+  <section class="hero is-medium is-bold">
+    <div class="hero-body">
+      <div class="container">
+        <h1 class="title">
+          Road Book & Mobile App
+        </h1>
+        <h2 class="subtitle">
+          Check Your Plan Anytime With Your Raod Book Or In the App
+        </h2>
+      </div>
     </div>
   </section>
 
-  <section class="hero is-light">
-    <div class="hero-body">
-      <div class="container">
-        <h1 class="title">
-          Primary title
-        </h1>
-        <h2 class="subtitle">
-          Primary subtitle
-        </h2>
-      </div>
+  <footer class="footer">
+    <div class="content has-text-centered">
+      <p>
+        CopyRight &copy; 2019, SITEO Inc.
+      </p>
     </div>
-  </section>
+  </footer>
 </body>
 </html>

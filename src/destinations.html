@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  @@include("include.html")
+  <link rel="stylesheet" href="/styles/index.min.css" />
+</head>
+<body>
+  @@include("header.html")
+  <section>
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide" style="background-image: url(/assets/christmas.jpg);">
+          <div class="container">
+            <div style="transform: translateY(150px); width:600px;">
+              <p class="title has-text-white">Santa Claus Village in Rovaniemi</p>
+              <p class="subtitle has-text-white">You can meet Santa Claus and cross the magical Arctic Circle every day at the Santa Claus Village in Rovaniemi in Lapland, Finland.</p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide" style="background-image: url(/assets/beach.jpg);">
+          <div class="container">
+              <div style="transform: translate(30px, 380px); width: 800px;">
+                <p class="title has-text-white">Maldives</p>
+                <p class="subtitle has-text-white">where sands are white as the smiles of the locals, where fish swim happily in the warm waters of the Indian Ocean, where the weather is a dream, and the deep rays of the sun wait to engulf you in their arms.</p>
+              </div>
+            </div>
+        </div>
+        <div class="swiper-slide" style="background-image: url(/assets/aurora.jpg);">
+          <div class="container">
+              <div style="transform: translate(220px, 130px); width:600px;">
+                <p class="title has-text-white">Aurora Borealis Holidays to Finland</p>
+                <p class="subtitle has-text-white">Along with our expert Aurora hunters dogged determination to seek out the lights for you during your stay, Finland is a perfect Northern Lights destination. We have selected some of the best locations for our Aurora Zone holidays.</p>
+              </div>
+            </div>
+        </div>
+      </div>
+      <!-- Add Arrows -->
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+  </section>
+  <section class="section">
+    <div class="container">
+      <div class="tile is-ancestor">
+        <div class="tile is-vertical is-8">
+          <div class="tile">
+            <div class="tile is-parent is-vertical">
+              <article class="tile is-child notification is-primary">
+                <p class="title">Vertical...</p>
+                <p class="subtitle">Top tile</p>
+              </article>
+              <article class="tile is-child notification is-warning">
+                <p class="title">...tiles</p>
+                <p class="subtitle">Bottom tile</p>
+              </article>
+            </div>
+            <div class="tile is-parent">
+              <article class="tile is-child notification is-info">
+                <p class="title">Middle tile</p>
+                <p class="subtitle">With an image</p>
+                <figure class="image is-4by3">
+                  <img src="https://bulma.io/images/placeholders/640x480.png">
+                </figure>
+              </article>
+            </div>
+          </div>
+          <div class="tile is-parent">
+            <article class="tile is-child notification is-danger">
+              <p class="title">Wide tile</p>
+              <p class="subtitle">Aligned with the right tile</p>
+              <div class="content">
+                <!-- Content -->
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="tile is-parent">
+          <article class="tile is-child notification is-success">
+            <div class="content">
+              <p class="title">Tall tile</p>
+              <p class="subtitle">With even more content</p>
+              <div class="content">
+                <!-- Content -->
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+    @@include("footer.html")
+</body>
+</html>

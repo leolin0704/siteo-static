@@ -1,0 +1,20 @@
+#! /bin/bash -e
+#
+# Publish Docker image
+
+cd $(dirname $0)/..
+
+REPOSITORY="753030975377.dkr.ecr.ap-southeast-1.amazonaws.com/siteo"
+VERSION=${BUILD_NUMBER:-latest}
+
+. auto/ecr-login
+
+# Release to new registry
+docker tag siteo-ui:build ${REPOSITORY}:${VERSION}
+docker push ${REPOSITORY}:${VERSION}
+docker tag siteo-ui:build ${REPOSITORY}:latest
+docker push ${REPOSITORY}:latest
+
+# Save image reference
+IMAGE="${REPOSITORY}:${VERSION}"
+echo "Released as: $IMAGE"

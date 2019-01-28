@@ -3,10 +3,9 @@ node('Siteo') {
         checkout scm
     }
     stage('Build'){
-        sh 'npm install'
-        sh 'npm run build'
+      sh 'auto/docker-build'
     }
-    stage('Server'){
-        sh 'npm run server'
+    stage('Release'){
+      sh 'auto/release-image'
     }
 }

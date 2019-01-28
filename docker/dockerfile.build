@@ -23,7 +23,7 @@ RUN npm i
 COPY . .
 
 # Build client
-RUN gulp build --mode=production
+RUN npx gulp build --mode=production
 
 # Start.
 CMD node ./server.js

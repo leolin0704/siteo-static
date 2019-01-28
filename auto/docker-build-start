@@ -1,0 +1,2 @@
+#!/bin/bash -eu
+docker run --rm -d -p 3002:3000 siteo-ui:build

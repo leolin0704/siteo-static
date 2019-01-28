@@ -1,6 +1,6 @@
 node('Siteo') {
     stage('Preparation') {
-        checkout([$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[credentialsId: 'b0c05da8-125d-4862-8e18-a102bec543df', url: 'https://github.com/leolin0704/siteo-static.git']]])
+        checkout scm
     }
     stage('Build'){
         sh 'npm install'

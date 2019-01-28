@@ -1,0 +1,29 @@
+# :TODO: Run a multi-stage build to run tests before building and abort upon
+# failures. This would remove the need to have the test docker and composer
+# files.
+# @see https://docs.docker.com/develop/develop-images/multistage-build
+
+# Node 10.x
+FROM node:10-alpine
+
+# Add bash support to image.
+RUN apk update && apk add bash
+
+# Create app directory.
+WORKDIR /var/www/siteo
+
+# Install app dependencies.
+# A wildcard is used to ensure both package.json AND package-lock.json are copied.
+COPY package*.json ./
+
+# Install NPM production deps and cleanup.
+RUN npm i
+
+# Bundle app source.
+COPY . .
+
+# Build client
+RUN gulp build --mode=production
+
+# Start.
+CMD node ./server.js
